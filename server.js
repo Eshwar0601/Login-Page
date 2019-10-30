@@ -1,8 +1,13 @@
-const http = require("http");
 var username = document.getElementById("userN");
 var password = document.getElementById("passW");
-http.connectServer((req,res) => {
-    res.console.log("username");
-    res.console.log("password")
-
-});
+function validate() {
+    if(username.value =="" || password.value =="") {
+        alert("Please Enter the username and password !");
+        return false;
+    } else if(username.value =="Eshwar" || password.value =="1234567890") {
+        return true;
+    } else {
+        alert("Invalid Username and Password!");
+        return false;
+    }
+}
