@@ -6,13 +6,13 @@
         <title>LOGIN</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleLogin.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
         <div class="Container">
             <h1>Login</h1>
-            <form >   
+            <form action="nextPage.html" onsubmit="return validate()">   
                 <div class="textbox">
                     <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
                     <input id="userN" type="text" placeholder="username" >
@@ -22,11 +22,11 @@
                     <input id="passW" type="password" placeholder="password">
                 </div>
                 <div class="butt">
-                    <button type="submit" onclick="verifyMyPage()">Login</button>
+                    <button type="submit" >Login</button>
                 </div>
                
             </form>
-            <script src="" async defer></script>
+            <script src="server.js"></script>
         </div>
     </body>
 </html>
